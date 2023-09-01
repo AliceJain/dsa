@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+const int N=1e5+2;
+bool visited[N];
+vector<int> adj[N];   // array of vectors
+
+void dfs(int node){
+    visited[node]=1;
+    cout<<node<<" ";
+    vector<int> :: iterator it;
+    for(it=adj[node].begin(); it!=adj[node].end(); it++){
+        if(visited[*it]);
+        else{
+            dfs(*it);
+        }
+    }
+
+}
+int main(){
+    for (int i = 0; i < N; i++)
+        visited[i]=0;
+    int n, m;
+    cin >>n>>m;
+    int x,y;
+    for(int i=0; i<m; i++){
+        cin>>x>>y;
+        adj[x].push_back(y);
+        adj[y].push_back(x);
+    }
+    dfs(1);
+    return 0;
+
+}
+
+

@@ -1,0 +1,1 @@
+{"name":"Local: slidingWindowMax","url":"c:\\Users\\Sunny\\Desktop\\cpp tutorial\\Dequeue\\slidingWindowMax.cpp","tests":[{"id":1687152670438,"input":"8 3\n1 3 -1 -3 5 3 6 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Sunny\\Desktop\\cpp tutorial\\Dequeue\\slidingWindowMax.cpp","group":"local","local":true}
